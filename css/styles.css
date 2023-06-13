@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: charter;
     src: url('../fonts/charter-regular.otf');
     font-style: normal;
@@ -24,7 +24,7 @@
     src: url('../fonts/charter-bold-italic.otf');
     font-style: normal;
     font-weight: bold;
-}
+} */
 
 :root {
     font-size: 18px;
@@ -35,7 +35,8 @@
 
 body {
     color: var(--gray30);
-    font-family: charter;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: charter; */
 }
 
 a {
@@ -72,3 +73,28 @@ h2 {
 h3 {
     font-size: 1.5em;
 }
+
+pre {
+    background:#FEC62E;
+}
+
+.hero {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, .3), transparent), url(../images/patern.png);
+    height: 350px;
+}
+
+h3::before {
+    content: "-";
+}
+
+h3::after {
+    content: "";
+    width: 32px;
+    height: 4px;
+    background: var(--gray30);
+    display: inline-block;
+}
+
+/* ::selection {
+    background: green;
+}  */
